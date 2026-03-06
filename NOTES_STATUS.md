@@ -1,6 +1,6 @@
 # Status checkpoint
-
-## What changed (today)
+2026-03-05
+## What changed 
 - Fixed data leakage:
   - attacker_steamid removed from model features
   - evaluation now defaults to grouped OOF (true eval)
@@ -51,7 +51,7 @@ Outputs:
 
 ---
 
-## 2026-03-06 UI Evidence-First Refactor
+## 2026-03-05 UI Evidence-First Refactor
 
 ### What changed
 - Demo players page simplified to evidence workflow only:
