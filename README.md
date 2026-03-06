@@ -1,6 +1,6 @@
 # NullCS
 
-NullCS is a research project for analyzing suspicious Counter-Strike 2 behavior from structured demo data (not screen capture).
+NullCS is a research project for analyzing suspicious Counter-Strike 2 behavior from structured demo data. It leverages statistics and machine learning to flag gameplay moments and provide signals that align with cheating in Counter-Strike 2. Any output produced by NullCS should not be taken as definitive proof of cheating. It is still in Pre-Alpha and still being trained on gameplay data.
 
 ## Quickstart (Backend + UI)
 
