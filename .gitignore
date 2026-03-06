@@ -1,0 +1,64 @@
+# Large/raw/demo data
+huggfacedata/
+*.dem
+raw_zips/
+parsed_zips/
+processed/
+raw_parsed/
+outputs/
+datasets/
+CheaterDemos/
+LegitDemos/
+Demos/
+NewAnubisTri/
+Plots/
+Post 100 Scripts New/
+Tick Level/
+cheat_training/
+legit_baseline_outputs/
+tris/
+*.zip
+*.png
+
+# Processed artifacts and reports
+main/data/**
+main/data/processed/**
+!main/data/processed/.gitkeep
+main/data/raw_uploads/**
+main/data/processed/reports/**
+main/data/processed/demos/**
+main/data/processed/models/**
+
+# Evidence/report exports
+**/evidence_*.csv
+**/ranked_*_suspicion*.csv
+**/*_infer.parquet
+**/*_infer.csv
+
+# Model artifacts
+*.joblib
+*.pkl
+*.onnx
+*.bin
+*.pt
+
+# Secrets and env
+.env
+.env.*
+*.key
+*.pem
+*.token
+
+# Python/Node local state
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+node_modules/
+main/ui/web/dist/
+main/ui/web/.vite/
+main/ui/web/*.log
+main/ui/web/tsconfig.tsbuildinfo
+main/ui/api/state/*.json

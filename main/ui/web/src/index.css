@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  color: #e5e7eb;
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(255, 255, 255, 0.07), transparent 60%),
+    radial-gradient(100% 130% at 100% 20%, rgba(186, 236, 255, 0.08), transparent 58%),
+    linear-gradient(160deg, #050505 0%, #0b0b0c 45%, #101113 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-app {
+  background: transparent;
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(12, 14, 16, 0.54);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.glass-subpanel {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(14, 16, 18, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+.btn-primary {
+  border: 1px solid rgba(187, 247, 255, 0.46);
+  background: linear-gradient(160deg, rgba(115, 223, 255, 0.42), rgba(236, 253, 255, 0.28));
+  color: #f8fafc;
+  border-radius: 10px;
+  padding: 0.58rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.btn-primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(20, 20, 20, 0.45);
+  color: #e2e8f0;
+  border-radius: 10px;
+  padding: 0.48rem 0.85rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.forensic-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.58;
+  pointer-events: none;
+}
+
+.forensic-label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: rgba(224, 244, 255, 0.5);
+  pointer-events: none;
+}
+
+:root[data-motion="reduced"] .glass-panel,
+:root[data-motion="reduced"] .glass-subpanel {
+  backdrop-filter: blur(2px);
+}
+
+:root[data-motion="reduced"] .forensic-bg,
+:root[data-motion="reduced"] .forensic-label {
+  display: none;
+}
